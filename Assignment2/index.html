@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        table, th, td 
+        {
+             border: 1px solid black;
+             border-collapse: collapse;
+             margin: auto;
+             text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div style="text-align: center;" >
+<h1 >Student Registration Form</h1>
+<form action="/action_page.php" target="_blank">
+    <label for="Name">Name: </label>
+    <input type="text" id="Name" name="Name" ><br><br>
+
+    <label for="Phn">Phone No.: </label>
+    <input type="text" id="Phn" name="Phn" ><br><br>
+
+    <label for="DOB">Date Of Birth : </label>
+    <input type="date" id="DOB" name="DOB" ><br><br>
+
+    <label for="Address">Address : </label>
+    <textarea name="Address" id="Address" rows="8" cols="25" ></textarea><br><br>
+
+    <label for="Gender">Gender : </label>
+    <input type="radio" id="Male" name="Gender" value="Male">
+    <label for="Male">Male</label>
+    <input type="radio" id="Female" name="Gender" value="Female">
+    <label for="Female">Female</label><br><br>
+
+    <label for="city">City :</label>
+    <select id="city" name="city" >
+    <option value="">Select city</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Jaipur">Jaipur</option>
+    <option value="Lucknow">Lucknow</option>
+    </select><br><br>
+
+    <label for="Hobbies">Hobbies : </label>
+    <input type="checkbox" id="Music" name="Hobbies" value="Music">
+    <label for="Music">Music</label><br>
+    <input type="checkbox" id="Sports" name="Hobbies" value="Sports">
+    <label for="Sports">Sports</label><br>
+    <input type="checkbox" id="Reading" name="Hobbies" value="Reading">
+    <label for="Reading">Reading</label><br>
+    <input type="checkbox" id="Travelling" name="Hobbies" value="Travelling">
+    <label for="Travelling">Travelling</label><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset"><br><br>
+
+    <table>
+        <caption><b>Student Records</b></caption>
+        <tr>
+            <th >S.No.</th>
+            <th>Name</th>
+            <th>Phone No.</th>
+            <th>Gender</th>
+            <th>DOB</th>
+            <th>Intrests</th>
+        </tr>
+        <tr>
+            <td rowspan="4">1.</td>
+            <td rowspan="4">Akash</td>
+            <td rowspan="4">123-45-67</td>
+            <td rowspan="4">Male</td>
+            <td rowspan="4">12/12/1996</td>
+            <tr><td >Music</td></tr>
+            <tr><td >Dance</td></tr>
+            <tr><td >Cooking</td></tr>
+        </tr>
+        <tr>
+            <td rowspan="3">2.</td>
+            <td rowspan="3">Anjali</td>
+            <td rowspan="3">123-995-67</td>
+            <td rowspan="3">Female</td>
+            <td rowspan="3">10/12/1999</td>
+            <tr><td >Music</td></tr>
+            <tr><td >Cooking</td></tr>
+        </tr>
+        <tr>
+            <td rowspan="3">3.</td>
+            <td rowspan="3">Akash</td>
+            <td rowspan="3">99-995-67</td>
+            <td rowspan="3">Male</td>
+            <td rowspan="3">11/12/1991</td>
+            <tr><td >Music</td></tr>
+            <tr><td >Dance</td></tr>
+        </tr>
+    </table>
+</form>
+</div>
+</body>
+</html>
