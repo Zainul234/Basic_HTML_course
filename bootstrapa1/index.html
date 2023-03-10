@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous">
+    
+    <style>
+        table, th, td 
+        {
+             border: 1px solid black;
+             border-collapse: collapse;
+             margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6 col-6 text-center" >
+                <h1>Form</h1>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-6 text-center" >
+                <h1>Table</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6 col-6 text-center" >
+                    <form action="/action_page.php" target="_blank">
+                        <div class="form-group">
+                        <label for="Name" class="form-label">Name: </label>
+                        <input type="text" id="Name" name="Name" class="form-control"><br><br>
+                        </div>
+                    
+                        <div class="form-group">
+                        <label for="Phn" class="form-label">Phone No.: </label>
+                        <input type="text" id="Phn" name="Phn" class="form-control"><br><br>
+                        </div>
+
+                        <div class="form-group">
+                        <label for="DOB" class="form-label">Date Of Birth : </label>
+                        <input type="date" id="DOB" name="DOB" class="form-control"><br><br>
+                        </div>
+
+                        <div class="form-group">
+                        <label for="Address" class="form-label">Address : </label>
+                        <textarea name="Address" id="Address" rows="8" cols="25" class="form-control"></textarea><br><br>
+                        </div>
+                    
+                        <label for="Gender" class="form-label">Gender : </label>
+                        <input type="radio" id="Male" name="Gender" value="Male">
+                        <label for="Male" class="form-check-label">Male</label>
+                        <input type="radio" id="Female" name="Gender" value="Female">
+                        <label for="Female" class="form-check-label">Female</label><br><br>
+                    
+                        <label for="city">City :</label>
+                        <select id="city" name="city" class="form-select">
+                        <option value="">Select city</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Lucknow">Lucknow</option>
+                        </select>
+                        <br><br>
+                    
+                        <label class="form-label" for="Hobbies">Hobbies : </label>
+                        <input type="checkbox" id="Music" name="Hobbies" value="Music" class="form-check-input">
+                        <label for="Music" class="form-check-label">Music</label><br>
+                        <input type="checkbox" id="Sports" name="Hobbies" value="Sports"  class="form-check-input">
+                        <label for="Sports" class="form-check-label">Sports</label><br>
+                        <input type="checkbox" id="Reading" name="Hobbies" value="Reading"  class="form-check-input">
+                        <label for="Reading" class="form-check-label">Reading</label><br>
+                        <input type="checkbox" id="Travelling" name="Hobbies" value="Travelling" class="form-check-input">
+                        <label for="Travelling" class="form-check-label">Travelling</label><br><br>
+                    
+                        <button type="button" class="btn btn-success">Submit</button>
+                        <button type="button" class="btn btn-primary">Reset</button>
+                        <br><br>  
+                    </form>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-6 text-center">
+                <table class="table text-center">
+                    <tr>
+                        <th >S.No.</th>
+                        <th>Name</th>
+                        <th>Phone No.</th>
+                        <th>Gender</th>
+                        <th>DOB</th>
+                        <th>Intrests</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">1.</td>
+                        <td rowspan="4">Akash</td>
+                        <td rowspan="4">123-45-67</td>
+                        <td rowspan="4">Male</td>
+                        <td rowspan="4">12/12/1996</td>
+                        <tr><td >Music</td></tr>
+                        <tr><td >Dance</td></tr>
+                        <tr><td >Cooking</td></tr>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">2.</td>
+                        <td rowspan="3">Anjali</td>
+                        <td rowspan="3">123-995-67</td>
+                        <td rowspan="3">Female</td>
+                        <td rowspan="3">10/12/1999</td>
+                        <tr><td >Music</td></tr>
+                        <tr><td >Cooking</td></tr>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">3.</td>
+                        <td rowspan="3">Akash</td>
+                        <td rowspan="3">99-995-67</td>
+                        <td rowspan="3">Male</td>
+                        <td rowspan="3">11/12/1991</td>
+                        <tr><td >Music</td></tr>
+                        <tr><td >Dance</td></tr>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
