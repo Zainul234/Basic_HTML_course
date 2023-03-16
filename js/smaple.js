@@ -7,14 +7,14 @@
         data.push(new Array("Mridul",22,"05-09-2000","mridul@gmail.com","Yellow AI"));
         data.push(new Array("Suyash",23,"06-12-1999","suyash@gmail.com","Moody"));
         data.push(new Array("Arushi",20,"09-03-2001","arushi@gmail.com","TCS"));
-        data.push(new Array("Manisha",21,"08-12-2000","manisha@gmail.com","Healthkart"));
+       // data.push(new Array("Manisha",21,"08-12-2000","manisha@gmail.com","Healthkart"));
 
         
         const tbl = document.createElement("table");
         const tblBody = document.createElement("tbody");
     
         
-        for (let i = 0; i < 6; i++)
+        for (let i = 0; i < 5; i++)
         {
             const row = document.createElement("tr");
         
