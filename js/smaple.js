@@ -2,12 +2,12 @@
     function generateTable()
     {
         var data=new Array();
-        data.push(new Array('S.No.',"Name","Contact","City"));
-        data.push(new Array(1,"Zainul",7068926592,"Ghaziabad"));
-        data.push(new Array(2,"Mridul",9616707112,"Dehradun"));
-        data.push(new Array(3,"Suyash",8717286378,"Pune"));
-        data.push(new Array(4,"Arushi",7621836666,"Bhopal"));
-        data.push(new Array(5,"Manisha",8899932333,"Bengluru"));
+        data.push(new Array("Name","Age","DOB","Email","Company"));
+        data.push(new Array("Zainul",22,"02-08-2000","zainul@gmail.com","Gemini"));
+        data.push(new Array("Mridul",22,"05-09-2000","mridul@gmail.com","Yellow AI"));
+        data.push(new Array("Suyash",23,"06-12-1999","suyash@gmail.com","Moody"));
+        data.push(new Array("Arushi",20,"09-03-2001","arushi@gmail.com","TCS"));
+        data.push(new Array("Manisha",21,"08-12-2000","manisha@gmail.com","Healthkart"));
 
         
         const tbl = document.createElement("table");
@@ -18,20 +18,20 @@
         {
             const row = document.createElement("tr");
         
-            for (let j = 0; j < 4; j++) {
+            for (let j = 0; j < 5; j++) {
                 if(i==0)
                 {
-                    const cell = document.createElement("th");
-                    const cellText = document.createTextNode(data[i][j]);
-                    cell.appendChild(cellText);
-                    row.appendChild(cell);
+                    const col = document.createElement("th");
+                    const colText = document.createTextNode(data[i][j]);
+                    col.appendChild(colText);
+                    row.appendChild(col);
                 }
                 else
                 {
-                    const cell = document.createElement("td");
-                    const cellText = document.createTextNode(data[i][j]);
-                    cell.appendChild(cellText);
-                    row.appendChild(cell);
+                    const col = document.createElement("td");
+                    const colText = document.createTextNode(data[i][j]);
+                    col.appendChild(colText);
+                    row.appendChild(col);
                 }
             }
         
@@ -42,6 +42,11 @@
         document.body.appendChild(tbl);
 
         tbl.setAttribute("border", "2");
+        
+        tbl.style.margin='auto';
+        tbl.style.textAlign='center';
+        tbl.style.borderCollapse='collapse';;
+        document.body.style.padding='10%';
     }
 )();
   
